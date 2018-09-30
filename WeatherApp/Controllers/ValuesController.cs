@@ -20,7 +20,7 @@ namespace WeatherApp.Controllers
         [HttpGet("{id}")]
         public string Get(int id)
         {
-            return "value";
+            return "" + id;
         }
 
         // POST api/values
