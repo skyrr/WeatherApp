@@ -34,14 +34,7 @@ namespace WeatherApp
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseMvc(routes =>
-            {
-                routes.MapRoute(
-                   "Default",                                              // Route name
-                   "{controller}/{action}/{id}",                           // URL with parameters
-                   new { controller = "Weather", action = "Forecast", city = ""}  // Parameter defaults
-               );
-            });
+            app.UseMvc();
         }
     }
 }
