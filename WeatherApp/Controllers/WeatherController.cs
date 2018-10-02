@@ -27,7 +27,6 @@ namespace WeatherApp.Controllers
 
             Configuration = builder.Build();
             var apiKey = Configuration["apiKey"];
-            //string apiKey = "fcadd28326c90c3262054e0e6ca599cd";
             string cityCodeLeipzig = "6548737";
             HttpWebRequest apiRequest = WebRequest.Create("http://api.openweathermap.org/data/2.5/weather?id=" + city + "&appid=" + apiKey + "&units=metric") as HttpWebRequest;
 
